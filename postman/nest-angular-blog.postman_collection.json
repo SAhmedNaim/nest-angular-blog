@@ -1,0 +1,84 @@
+{
+	"variables": [],
+	"info": {
+		"name": "nest-angular-blog",
+		"_postman_id": "b0846d32-1dd6-c7c0-7965-0bce3955ec96",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all User",
+			"request": {
+				"url": "localhost:3000/user",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get one user",
+			"request": {
+				"url": "localhost:3000/user/3",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create a User",
+			"request": {
+				"url": "localhost:3000/user",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Nobin Khan\",\n\t\"username\": \"nobin-khan\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a user",
+			"request": {
+				"url": "localhost:3000/user/3",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update a User",
+			"request": {
+				"url": "localhost:3000/user/2",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"naimAhmed\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

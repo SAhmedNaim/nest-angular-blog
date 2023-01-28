@@ -4,3 +4,12 @@
 - `cd api`  
 - `npm install`  
 - `npm run start:dev`
+
+### Generate Nest.JS Module:
+- `nest generate module user`
+
+### Generate Nest.JS Service:
+- `nest generate service user`
+
+### Generate Nest.JS Controller:
+- `nest generate controller user`
