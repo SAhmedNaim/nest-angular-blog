@@ -6,8 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="78811c43-852d-4bd8-ae9f-0d9b5fb6b372" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/.env" beforeDir="false" afterPath="$PROJECT_DIR$/api/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/api/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/user/controller/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/user/controller/user.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/user/models/user.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/user/models/user.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/user/models/user.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/user/models/user.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/user/service/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/user/service/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/user/user.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/user/user.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,18 +41,27 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/var/nodejs/nest-angular-blog",
+    "last_opened_file_path": "/home/s-ahmed-naim/.nvm/versions/node/v19.2.0/bin/npm",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
+    "nodejs_interpreter_path": "/home/s-ahmed-naim/.nvm/versions/node/v19.2.0/bin/node",
+    "nodejs_package_manager_path": "/home/s-ahmed-naim/.nvm/versions/node/v19.2.0/bin/npm",
     "prettierjs.PrettierConfiguration.Package": "/var/nodejs/nest-angular-blog/node_modules/prettier",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "ts.external.directory.path": "/var/nodejs/nest-angular-blog/api/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/postman" />
       <recent name="$PROJECT_DIR$/api/src/user/controller" />
     </key>
   </component>
@@ -56,11 +73,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674899486281</updated>
-      <workItem from="1674899487988" duration="12077000" />
+      <workItem from="1674899487988" duration="16015000" />
+      <workItem from="1674931391343" duration="820000" />
+      <workItem from="1675004579494" duration="120000" />
+      <workItem from="1675004727190" duration="9891000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
