@@ -15,7 +15,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"email\": \"alamgir@gmail.com\",\n    \"password\": \"12345678\"\n}",
+							"raw": "{\n    \"email\": \"naim.ahmed035@gmail.com\",\n    \"password\": \"123456789\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -23,13 +23,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/user/login",
+							"raw": "localhost:3000/api/users/login",
 							"host": [
 								"localhost"
 							],
 							"port": "3000",
 							"path": [
-								"user",
+								"api",
+								"users",
 								"login"
 							]
 						}
@@ -44,6 +45,16 @@
 				{
 					"name": "Create a User",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo2LCJuYW1lIjoiQWxhbWdyaSBIb3NzYWluIiwidXNlcm5hbWUiOiJiYXRwYXItYWxhbWdpciIsImVtYWlsIjoiYWxhbWdpckBnbWFpbC5jb20iLCJyb2xlIjoidXNlciJ9LCJpYXQiOjE2NzU1MzEyMTksImV4cCI6MTY3NTUzMjIxOX0.gooo8NumJ29ATdg4AVnzgboyFmdcd4ak3Bd7zLf5d44",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [
 							{
@@ -53,16 +64,17 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Nobin Khan\",\n\t\"username\": \"nobin-khan\"\n}"
+							"raw": "{\n\t\"name\": \"Naim Ahmed\",\n\t\"username\": \"naim-ahmed\",\n    \"email\": \"naim.ahmed035@gmail.com\",\n    \"password\": \"123456789\",\n    \"role\": \"admin\"\n}"
 						},
 						"url": {
-							"raw": "localhost:3000/user",
+							"raw": "localhost:3000/api/users",
 							"host": [
 								"localhost"
 							],
 							"port": "3000",
 							"path": [
-								"user"
+								"api",
+								"users"
 							]
 						}
 					},
@@ -71,16 +83,37 @@
 				{
 					"name": "Get all User",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjo3LCJuYW1lIjoiTmFpbSBBaG1lZCIsInVzZXJuYW1lIjoibmFpbS1haG1lZCIsImVtYWlsIjoibmFpbS5haG1lZDAzNUBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4ifSwiaWF0IjoxNjc2NzYzMjg4LCJleHAiOjE2NzY3NjQyODh9.7MnFP-30fFpg4vvs3kPG4jNA24b48yKdMZJZ12Kt-oY",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/user",
+							"raw": "localhost:3000/api/users?page=2&limit=2",
 							"host": [
 								"localhost"
 							],
 							"port": "3000",
 							"path": [
-								"user"
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								},
+								{
+									"key": "limit",
+									"value": "2"
+								}
 							]
 						}
 					},
@@ -92,14 +125,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/user/3",
+							"raw": "localhost:3000/api/users/6",
 							"host": [
 								"localhost"
 							],
 							"port": "3000",
 							"path": [
-								"user",
-								"3"
+								"api",
+								"users",
+								"6"
 							]
 						}
 					},
@@ -120,13 +154,14 @@
 							"raw": "{\n\t\"username\": \"naimAhmed\"\n}"
 						},
 						"url": {
-							"raw": "localhost:3000/user/2",
+							"raw": "localhost:3000/api/users/2",
 							"host": [
 								"localhost"
 							],
 							"port": "3000",
 							"path": [
-								"user",
+								"api",
+								"users",
 								"2"
 							]
 						}
@@ -139,13 +174,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/user/3",
+							"raw": "localhost:3000/api/users/3",
 							"host": [
 								"localhost"
 							],
 							"port": "3000",
 							"path": [
-								"user",
+								"api",
+								"users",
 								"3"
 							]
 						}
@@ -177,13 +213,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/user/6/role",
+							"raw": "localhost:3000/api/users/6/role",
 							"host": [
 								"localhost"
 							],
 							"port": "3000",
 							"path": [
-								"user",
+								"api",
+								"users",
 								"6",
 								"role"
 							]

@@ -25,3 +25,20 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+# Commands to run the Project 
+
+### Add Material Design:
+- `ng add @angular/material`
+
+### Create a Module(admin) with Routing
+- `ng g m admin --routing`
+
+### Create a Component(overview) inside directory 'admin/components'
+- `ng g c admin/componenets/overview`
+
+### Create a Service(authentication) inside folder 'services'
+- `ng g s services/authentication`
+
+### Use RXJS
+- `npm i --save rxjs`
