@@ -30,5 +30,14 @@
         </ng-container>
 
     </mat-table>
+
+    <mat-paginator #paginator
+        [length]="dataSource.meta.totalItems"
+        [pageSize]="dataSource.meta.itemsPerPage"
+        [pageSizeOptions]="[5, 10, 25, 100]"
+        (page)="pageEvent = $event; onPaginateChange($event)"
+        showFirstLastButtons>
+    </mat-paginator>
+
 </div>
 
