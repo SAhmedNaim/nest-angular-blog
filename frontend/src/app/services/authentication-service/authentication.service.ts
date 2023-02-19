@@ -1,4 +1,3 @@
-import { User } from './../../../../../api/src/user/models/user.interface';
 import { map } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
@@ -7,6 +6,18 @@ export interface LoginForm {
   email: string;
   password: string;
 }
+
+export interface User {
+  id?: number
+  name?: string;
+  username?: string;
+  email?: string;
+  password?: string;
+  role?: string;
+  // profileImage?: string;
+  // passwordConfirm?: string;
+}
+
 
 @Injectable({
   providedIn: 'root'

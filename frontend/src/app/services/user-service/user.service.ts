@@ -1,8 +1,9 @@
 import { catchError, throwError } from 'rxjs';
-import { User } from './../../../../../api/src/user/models/user.interface';
 import { Observable, map } from 'rxjs';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { User } from '../authentication-service/authentication.service';
+
 
 export interface UserData {
   items: User[],
@@ -34,10 +35,9 @@ export class UserService {
     params = params.append('page', String(page));
     params = params.append('limit', String(size));
     
-    return this.http.get('/api/users', { params }).pipe(
+    return this.http.get<UserData>('/api/users', { params }).pipe(
       map((userData: UserData) => userData),
       catchError(err => throwError(err))
     );
   }
-
 }
