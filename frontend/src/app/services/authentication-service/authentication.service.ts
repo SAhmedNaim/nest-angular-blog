@@ -1,4 +1,4 @@
-import { User } from './../../../../api/src/user/models/user.interface';
+import { User } from './../../../../../api/src/user/models/user.interface';
 import { map } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
